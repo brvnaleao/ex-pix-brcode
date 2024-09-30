@@ -21,7 +21,7 @@ defmodule ExPixBRCode.JWS.JWKSStorage do
         }
 
   @doc """
-  Get the signer associated with the given 
+  Get the signer associated with the given
   """
   @spec jwks_storage_by_jws_headers(JWSHeaders.t()) :: nil | __MODULE__.t()
   def jwks_storage_by_jws_headers(headers) do

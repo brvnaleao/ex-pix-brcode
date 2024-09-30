@@ -65,7 +65,7 @@ defmodule ExPixBRCode.Payments.Models.DynamicImmediatePixPaymentTest do
       }
 
       assert {:ok, %DynamicImmediatePixPayment{}} =
-               Changesets.cast_and_apply(DynamicImmediatePixPayment, payload)
+               Changesets.cast_and_apply(DynamicImmediatePixPayment, payload) |> IO.inspect()
     end
 
     test "successfully validates a proper payload without optional fields" do
